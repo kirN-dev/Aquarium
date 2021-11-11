@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquariumUI", "AquariumUI\AquariumUI.csproj", "{6496D6B0-D124-4E3A-8D17-0C2ED590F156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquarium", "Aquarium.BL\Aquarium.csproj", "{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6496D6B0-D124-4E3A-8D17-0C2ED590F156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6496D6B0-D124-4E3A-8D17-0C2ED590F156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6496D6B0-D124-4E3A-8D17-0C2ED590F156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6496D6B0-D124-4E3A-8D17-0C2ED590F156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {899EA846-6088-4639-8A92-7F5114ADA7F6}
+	EndGlobalSection
+EndGlobal
