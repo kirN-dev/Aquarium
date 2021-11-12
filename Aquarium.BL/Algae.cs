@@ -32,10 +32,10 @@ namespace Aquarium
             throw new NotImplementedException();
         }
 
-        public bool Grow()
+        public void Grow()
         {
             //_time.Ticks;
-            return true;
+            return;
         }
     }
 }

@@ -21,9 +21,6 @@ namespace AquariumUI
 
             MessageBox.Show(timeSpan.Seconds.ToString());
 
-            Child child = new();
-
-            MessageBox.Show(child.Word);
         }
     }
 }
