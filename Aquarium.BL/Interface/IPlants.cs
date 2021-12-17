@@ -11,8 +11,6 @@ namespace Aquarium.Interface
         string Name { get; }
         int TimeGrow { get; }
         bool IsGrowUp { get; }
-
-        bool Grow();
-        void Destroy();
+        float CountOxygen { get; }
     }
 }
