@@ -10,7 +10,14 @@ namespace Aquarium
     class Algae : IPlants
     {
         private int _timeGrow;
-        private TimeSpan _time;
+        private  CountDownTimer _timer;
+
+		public Algae(string name, int timeGrow)
+		{
+            Name = name;
+            TimeGrow = timeGrow;
+        }
+
         public string Name { get; }
         public int TimeGrow 
         { 
@@ -23,19 +30,20 @@ namespace Aquarium
                 }
 
                 _timeGrow = value;
+                _timer = new CountDownTimer(_timeGrow);
+				_timer.CountDownEnd += Grow;
+                _timer.Start();
             } 
         }
-        public bool IsGrowUp { get; }
 
-        public void Destroy()
-        {
-            throw new NotImplementedException();
-        }
+        public bool IsGrowUp { get; private set; } = false;
 
-        public void Grow()
+        public float CountOxygen { get; private set; } = 0f;
+
+        private void Grow(object sender, EventArgs e)
         {
-            //_time.Ticks;
-            return;
+            IsGrowUp = true;
+            CountOxygen = .5f;
         }
     }
 }

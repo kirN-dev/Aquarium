@@ -12,7 +12,7 @@ namespace Aquarium.Interface
         int TimeGrow { get; }
         bool IsGrowUp { get; }
 
-        void Grow();
+        bool Grow();
         void Destroy();
     }
 }
