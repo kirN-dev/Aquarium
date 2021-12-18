@@ -11,16 +11,12 @@ using System.Windows.Forms;
 
 namespace AquariumUI
 {
-   
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-            TimeSpan timeSpan = TimeSpan.FromSeconds(3);
 
-            MessageBox.Show(timeSpan.Seconds.ToString());
-
-        }
-    }
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			InitializeComponent();
+		}
+	}
 }

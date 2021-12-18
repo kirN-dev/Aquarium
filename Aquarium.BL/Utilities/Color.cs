@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aquarium
+namespace Aquarium.Utilities
 {
-    public class Breed
-    {
-        public HabitatConditions HabitatConditions { get; }
-    }
+	public struct Color
+	{
+		public string Name;
+	}
 }

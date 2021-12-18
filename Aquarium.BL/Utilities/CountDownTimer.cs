@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aquarium
+namespace Aquarium.Utilities
 {
-    class CountDownTimer
+    public class CountDownTimer
     {
         private DateTime endTime;
         private TimeSpan timeRest;

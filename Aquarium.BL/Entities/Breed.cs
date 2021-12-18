@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aquarium
+namespace Aquarium.Enities
 {
-    public class HabitatConditions
-    {
-
-    }
+	public class Breed
+	{
+		public HabitatConditions HabitatConditions { get; }
+	}
 }
