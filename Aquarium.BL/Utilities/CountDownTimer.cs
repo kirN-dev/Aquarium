@@ -39,11 +39,11 @@ namespace Aquarium.Utilities
         void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             timeRest = endTime.Subtract(e.SignalTime);
-            CountDown(this, new EventArgs());
+            CountDown?.Invoke(this, new EventArgs());
             if (timeRest <= TimeSpan.Zero)
             {
                 timer.Stop();
-                CountDownEnd(this, new EventArgs());
+                CountDownEnd?.Invoke(this, new EventArgs());
             }
         }
         /// <summary>

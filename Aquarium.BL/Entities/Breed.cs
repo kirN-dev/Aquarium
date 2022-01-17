@@ -8,6 +8,6 @@ namespace Aquarium.Enities
 {
 	public class Breed
 	{
-		public HabitatConditions HabitatConditions { get; }
+		public HabitatConditions HabitatConditions { get; set; }
 	}
 }

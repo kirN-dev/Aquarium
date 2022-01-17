@@ -15,6 +15,8 @@ namespace Aquarium.Enities
 			Variety = variety;
 		}
 
+		public event Action Growed;
+
 		public Variety Variety { get; }
 
 		public string Name { get; }
@@ -43,6 +45,12 @@ namespace Aquarium.Enities
 		{
 			IsGrowUp = true;
 			CountOxygen = .5f;
+			Growed?.Invoke();
+		}
+
+		public override string ToString()
+		{
+			return Name;
 		}
 	}
 }

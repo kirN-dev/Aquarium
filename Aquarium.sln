@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AquariumUI", "AquariumUI\Aq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquarium", "Aquarium.BL\Aquarium.csproj", "{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquarium.UI", "Aquarium.UI\Aquarium.UI.csproj", "{A33500F3-4E82-4F8C-9598-3A8245D2E8CB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EFB7F8D-3B7B-464B-88C8-46EBD6150FE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A33500F3-4E82-4F8C-9598-3A8245D2E8CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A33500F3-4E82-4F8C-9598-3A8245D2E8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A33500F3-4E82-4F8C-9598-3A8245D2E8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A33500F3-4E82-4F8C-9598-3A8245D2E8CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

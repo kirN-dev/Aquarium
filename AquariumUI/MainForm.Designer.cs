@@ -29,192 +29,227 @@ namespace AquariumUI
         /// </summary>
         private void InitializeComponent()
         {
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.listBox1 = new System.Windows.Forms.ListBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.listBox2 = new System.Windows.Forms.ListBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.listView1 = new System.Windows.Forms.ListView();
-			this.listView2 = new System.Windows.Forms.ListView();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
-			this.groupBox4.SuspendLayout();
+			this.gpFishes = new System.Windows.Forms.GroupBox();
+			this.btnDeleteFish = new System.Windows.Forms.Button();
+			this.btnAddFish = new System.Windows.Forms.Button();
+			this.lstFishes = new System.Windows.Forms.ListBox();
+			this.gpAlgaes = new System.Windows.Forms.GroupBox();
+			this.btnDeleteAlgae = new System.Windows.Forms.Button();
+			this.btnAddAlgae = new System.Windows.Forms.Button();
+			this.lstAlgaes = new System.Windows.Forms.ListBox();
+			this.gpInformation = new System.Windows.Forms.GroupBox();
+			this.lblColor = new System.Windows.Forms.Label();
+			this.pbColour = new System.Windows.Forms.PictureBox();
+			this.lstInformation = new System.Windows.Forms.ListBox();
+			this.gpStats = new System.Windows.Forms.GroupBox();
+			this.lstStats = new System.Windows.Forms.ListBox();
+			this.gpFishes.SuspendLayout();
+			this.gpAlgaes.SuspendLayout();
+			this.gpInformation.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbColour)).BeginInit();
+			this.gpStats.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// groupBox1
+			// gpFishes
 			// 
-			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.gpFishes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-			this.groupBox1.Controls.Add(this.button2);
-			this.groupBox1.Controls.Add(this.button1);
-			this.groupBox1.Controls.Add(this.listBox1);
-			this.groupBox1.Location = new System.Drawing.Point(15, 17);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-			this.groupBox1.Size = new System.Drawing.Size(257, 617);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "groupBox1";
+			this.gpFishes.Controls.Add(this.btnDeleteFish);
+			this.gpFishes.Controls.Add(this.btnAddFish);
+			this.gpFishes.Controls.Add(this.lstFishes);
+			this.gpFishes.Location = new System.Drawing.Point(15, 17);
+			this.gpFishes.Margin = new System.Windows.Forms.Padding(4);
+			this.gpFishes.Name = "gpFishes";
+			this.gpFishes.Padding = new System.Windows.Forms.Padding(4);
+			this.gpFishes.Size = new System.Drawing.Size(257, 617);
+			this.gpFishes.TabIndex = 0;
+			this.gpFishes.TabStop = false;
+			this.gpFishes.Text = "Рыбки";
 			// 
-			// button2
+			// btnDeleteFish
 			// 
-			this.button2.Location = new System.Drawing.Point(8, 568);
-			this.button2.Margin = new System.Windows.Forms.Padding(4);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(242, 32);
-			this.button2.TabIndex = 2;
-			this.button2.Text = "button2";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btnDeleteFish.Location = new System.Drawing.Point(8, 568);
+			this.btnDeleteFish.Margin = new System.Windows.Forms.Padding(4);
+			this.btnDeleteFish.Name = "btnDeleteFish";
+			this.btnDeleteFish.Size = new System.Drawing.Size(242, 32);
+			this.btnDeleteFish.TabIndex = 2;
+			this.btnDeleteFish.Text = "Выловить";
+			this.btnDeleteFish.UseVisualStyleBackColor = true;
+			this.btnDeleteFish.Click += new System.EventHandler(this.btnDeleteFish_Click);
 			// 
-			// button1
+			// btnAddFish
 			// 
-			this.button1.Location = new System.Drawing.Point(8, 528);
-			this.button1.Margin = new System.Windows.Forms.Padding(4);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(242, 32);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
+			this.btnAddFish.Location = new System.Drawing.Point(8, 528);
+			this.btnAddFish.Margin = new System.Windows.Forms.Padding(4);
+			this.btnAddFish.Name = "btnAddFish";
+			this.btnAddFish.Size = new System.Drawing.Size(242, 32);
+			this.btnAddFish.TabIndex = 1;
+			this.btnAddFish.Text = "Добавить";
+			this.btnAddFish.UseVisualStyleBackColor = true;
+			this.btnAddFish.Click += new System.EventHandler(this.btnAddFish_Click);
 			// 
-			// listBox1
+			// lstFishes
 			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.ItemHeight = 21;
-			this.listBox1.Location = new System.Drawing.Point(8, 31);
-			this.listBox1.Margin = new System.Windows.Forms.Padding(4);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(241, 487);
-			this.listBox1.TabIndex = 0;
+			this.lstFishes.FormattingEnabled = true;
+			this.lstFishes.ItemHeight = 21;
+			this.lstFishes.Location = new System.Drawing.Point(8, 31);
+			this.lstFishes.Margin = new System.Windows.Forms.Padding(4);
+			this.lstFishes.Name = "lstFishes";
+			this.lstFishes.Size = new System.Drawing.Size(241, 487);
+			this.lstFishes.TabIndex = 0;
+			this.lstFishes.SelectedIndexChanged += new System.EventHandler(this.lstFishes_SelectedIndexChanged);
 			// 
-			// groupBox2
+			// gpAlgaes
 			// 
-			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-			this.groupBox2.Controls.Add(this.button3);
-			this.groupBox2.Controls.Add(this.button4);
-			this.groupBox2.Controls.Add(this.listBox2);
-			this.groupBox2.Location = new System.Drawing.Point(280, 17);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-			this.groupBox2.Size = new System.Drawing.Size(257, 617);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "groupBox2";
+			this.gpAlgaes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.gpAlgaes.Controls.Add(this.btnDeleteAlgae);
+			this.gpAlgaes.Controls.Add(this.btnAddAlgae);
+			this.gpAlgaes.Controls.Add(this.lstAlgaes);
+			this.gpAlgaes.Location = new System.Drawing.Point(280, 17);
+			this.gpAlgaes.Margin = new System.Windows.Forms.Padding(4);
+			this.gpAlgaes.Name = "gpAlgaes";
+			this.gpAlgaes.Padding = new System.Windows.Forms.Padding(4);
+			this.gpAlgaes.Size = new System.Drawing.Size(257, 617);
+			this.gpAlgaes.TabIndex = 1;
+			this.gpAlgaes.TabStop = false;
+			this.gpAlgaes.Text = "Растительность";
 			// 
-			// button3
+			// btnDeleteAlgae
 			// 
-			this.button3.Location = new System.Drawing.Point(8, 568);
-			this.button3.Margin = new System.Windows.Forms.Padding(4);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(242, 32);
-			this.button3.TabIndex = 5;
-			this.button3.Text = "button3";
-			this.button3.UseVisualStyleBackColor = true;
+			this.btnDeleteAlgae.Location = new System.Drawing.Point(8, 568);
+			this.btnDeleteAlgae.Margin = new System.Windows.Forms.Padding(4);
+			this.btnDeleteAlgae.Name = "btnDeleteAlgae";
+			this.btnDeleteAlgae.Size = new System.Drawing.Size(242, 32);
+			this.btnDeleteAlgae.TabIndex = 5;
+			this.btnDeleteAlgae.Text = "Убрать";
+			this.btnDeleteAlgae.UseVisualStyleBackColor = true;
+			this.btnDeleteAlgae.Click += new System.EventHandler(this.btnDeleteAlgae_Click);
 			// 
-			// button4
+			// btnAddAlgae
 			// 
-			this.button4.Location = new System.Drawing.Point(8, 528);
-			this.button4.Margin = new System.Windows.Forms.Padding(4);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(242, 32);
-			this.button4.TabIndex = 4;
-			this.button4.Text = "button4";
-			this.button4.UseVisualStyleBackColor = true;
+			this.btnAddAlgae.Location = new System.Drawing.Point(8, 528);
+			this.btnAddAlgae.Margin = new System.Windows.Forms.Padding(4);
+			this.btnAddAlgae.Name = "btnAddAlgae";
+			this.btnAddAlgae.Size = new System.Drawing.Size(242, 32);
+			this.btnAddAlgae.TabIndex = 4;
+			this.btnAddAlgae.Text = "Добавить";
+			this.btnAddAlgae.UseVisualStyleBackColor = true;
+			this.btnAddAlgae.Click += new System.EventHandler(this.btnAddAlgae_Click);
 			// 
-			// listBox2
+			// lstAlgaes
 			// 
-			this.listBox2.FormattingEnabled = true;
-			this.listBox2.ItemHeight = 21;
-			this.listBox2.Location = new System.Drawing.Point(8, 31);
-			this.listBox2.Margin = new System.Windows.Forms.Padding(4);
-			this.listBox2.Name = "listBox2";
-			this.listBox2.Size = new System.Drawing.Size(241, 487);
-			this.listBox2.TabIndex = 3;
+			this.lstAlgaes.FormattingEnabled = true;
+			this.lstAlgaes.ItemHeight = 21;
+			this.lstAlgaes.Location = new System.Drawing.Point(8, 31);
+			this.lstAlgaes.Margin = new System.Windows.Forms.Padding(4);
+			this.lstAlgaes.Name = "lstAlgaes";
+			this.lstAlgaes.Size = new System.Drawing.Size(241, 487);
+			this.lstAlgaes.TabIndex = 3;
+			this.lstAlgaes.SelectedIndexChanged += new System.EventHandler(this.lstAlgaes_SelectedIndexChanged);
 			// 
-			// groupBox3
+			// gpInformation
 			// 
-			this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox3.Controls.Add(this.listView1);
-			this.groupBox3.Location = new System.Drawing.Point(544, 17);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(200, 214);
-			this.groupBox3.TabIndex = 2;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "groupBox3";
+			this.gpInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.gpInformation.Controls.Add(this.lblColor);
+			this.gpInformation.Controls.Add(this.pbColour);
+			this.gpInformation.Controls.Add(this.lstInformation);
+			this.gpInformation.Location = new System.Drawing.Point(544, 17);
+			this.gpInformation.Name = "gpInformation";
+			this.gpInformation.Size = new System.Drawing.Size(200, 291);
+			this.gpInformation.TabIndex = 2;
+			this.gpInformation.TabStop = false;
+			this.gpInformation.Text = "Информация";
 			// 
-			// groupBox4
+			// lblColor
 			// 
-			this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox4.Controls.Add(this.listView2);
-			this.groupBox4.Location = new System.Drawing.Point(544, 237);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(200, 397);
-			this.groupBox4.TabIndex = 3;
-			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "groupBox4";
+			this.lblColor.AutoSize = true;
+			this.lblColor.Location = new System.Drawing.Point(7, 229);
+			this.lblColor.Name = "lblColor";
+			this.lblColor.Size = new System.Drawing.Size(48, 21);
+			this.lblColor.TabIndex = 6;
+			this.lblColor.Text = "Цвет:";
 			// 
-			// listView1
+			// pbColour
 			// 
-			this.listView1.HideSelection = false;
-			this.listView1.Location = new System.Drawing.Point(6, 28);
-			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(188, 180);
-			this.listView1.TabIndex = 0;
-			this.listView1.UseCompatibleStateImageBehavior = false;
+			this.pbColour.BackColor = System.Drawing.SystemColors.Control;
+			this.pbColour.Location = new System.Drawing.Point(7, 253);
+			this.pbColour.Name = "pbColour";
+			this.pbColour.Size = new System.Drawing.Size(186, 32);
+			this.pbColour.TabIndex = 5;
+			this.pbColour.TabStop = false;
 			// 
-			// listView2
+			// lstInformation
 			// 
-			this.listView2.HideSelection = false;
-			this.listView2.Location = new System.Drawing.Point(6, 28);
-			this.listView2.Name = "listView2";
-			this.listView2.Size = new System.Drawing.Size(188, 363);
-			this.listView2.TabIndex = 1;
-			this.listView2.UseCompatibleStateImageBehavior = false;
+			this.lstInformation.FormattingEnabled = true;
+			this.lstInformation.ItemHeight = 21;
+			this.lstInformation.Location = new System.Drawing.Point(7, 29);
+			this.lstInformation.Margin = new System.Windows.Forms.Padding(4);
+			this.lstInformation.Name = "lstInformation";
+			this.lstInformation.Size = new System.Drawing.Size(186, 193);
+			this.lstInformation.TabIndex = 4;
+			// 
+			// gpStats
+			// 
+			this.gpStats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.gpStats.Controls.Add(this.lstStats);
+			this.gpStats.Location = new System.Drawing.Point(544, 314);
+			this.gpStats.Name = "gpStats";
+			this.gpStats.Size = new System.Drawing.Size(200, 320);
+			this.gpStats.TabIndex = 3;
+			this.gpStats.TabStop = false;
+			this.gpStats.Text = "Статистика";
+			// 
+			// lstStats
+			// 
+			this.lstStats.FormattingEnabled = true;
+			this.lstStats.ItemHeight = 21;
+			this.lstStats.Location = new System.Drawing.Point(7, 29);
+			this.lstStats.Margin = new System.Windows.Forms.Padding(4);
+			this.lstStats.Name = "lstStats";
+			this.lstStats.Size = new System.Drawing.Size(186, 277);
+			this.lstStats.TabIndex = 5;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(756, 642);
-			this.Controls.Add(this.groupBox4);
-			this.Controls.Add(this.groupBox3);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
+			this.Controls.Add(this.gpStats);
+			this.Controls.Add(this.gpInformation);
+			this.Controls.Add(this.gpAlgaes);
+			this.Controls.Add(this.gpFishes);
 			this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.Name = "MainForm";
-			this.Text = "Form1";
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox3.ResumeLayout(false);
-			this.groupBox4.ResumeLayout(false);
+			this.Text = "Аквариум";
+			this.gpFishes.ResumeLayout(false);
+			this.gpAlgaes.ResumeLayout(false);
+			this.gpInformation.ResumeLayout(false);
+			this.gpInformation.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbColour)).EndInit();
+			this.gpStats.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
 
 		#endregion
 
-		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.ListBox listBox1;
-		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.ListBox listBox2;
-		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.ListView listView1;
-		private System.Windows.Forms.ListView listView2;
+		private System.Windows.Forms.GroupBox gpFishes;
+		private System.Windows.Forms.Button btnDeleteFish;
+		private System.Windows.Forms.Button btnAddFish;
+		private System.Windows.Forms.ListBox lstFishes;
+		private System.Windows.Forms.GroupBox gpAlgaes;
+		private System.Windows.Forms.Button btnDeleteAlgae;
+		private System.Windows.Forms.Button btnAddAlgae;
+		private System.Windows.Forms.ListBox lstAlgaes;
+		private System.Windows.Forms.GroupBox gpInformation;
+		private System.Windows.Forms.GroupBox gpStats;
+		private System.Windows.Forms.ListBox lstInformation;
+		private System.Windows.Forms.ListBox lstStats;
+		private System.Windows.Forms.PictureBox pbColour;
+		private System.Windows.Forms.Label lblColor;
 	}
 }
 
